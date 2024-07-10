@@ -81,7 +81,7 @@ const SearchBar = ({ onSubmit, onReset, placeHolder, searchQuery }: Props) => {
         >
           Reset
         </Button>
-        <Button type="submit" className="rounded-full bg-orange-500">
+        <Button type="submit" className="rounded-full bg-red-500">
           Search
         </Button>
       </form>
