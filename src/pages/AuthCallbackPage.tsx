@@ -11,15 +11,11 @@ const AuthCallbackPage = () => {
   const hasCreatedUser = useRef(false);
 
   useEffect(() => {
-    const createUserAndNavigate = async () => {
-      if (user?.sub && user?.email && !hasCreatedUser.current) {
-        await createUser({ auth0Id: user.sub, email: user.email });
-        hasCreatedUser.current = true;
-        navigate("/");
-      }
-    };
-
-    createUserAndNavigate();
+    if (user?.sub && user?.email && !hasCreatedUser.current) {
+      createUser({ auth0Id: user.sub, email: user.email });
+      hasCreatedUser.current = true;
+    }
+    navigate("/");
   }, [createUser, navigate, user]);
 
   return <>Loading...</>;
