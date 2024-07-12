@@ -55,10 +55,10 @@
   },
   
   {
-    "user": "User2",
-    "restaurantName": "Restaurant 2",
-    "city": "London",
-    "country": "UK",
+    "user": "maxi@gmail.com",
+    "restaurantName": "FoodHub",
+    "city": "Mumbai",
+    "country": "India",
     "deliveryPrice": 150,
     "estimatedDeliveryTime": 21,
     "cuisines": [
