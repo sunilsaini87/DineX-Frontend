@@ -1,6 +1,5 @@
 export const cuisineList = [
   "American",
-  "BBQ",
   "Breakfast",
   "Burgers",
   "Cafe",
@@ -20,7 +19,6 @@ export const cuisineList = [
   "Salads",
   "Seafood",
   "Spanish",
-  "Steak",
   "Sushi",
   "Tacos",
   "Tapas",

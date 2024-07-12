@@ -1,57 +1,59 @@
 [
   {
-    "user": "User1",
-    "restaurantName": "Restaurant 1",
-    "city": "London",
-    "country": "UK",
-    "deliveryPrice": 210,
-    "estimatedDeliveryTime": 32,
+    "user": "John",
+    "email":"John@gmail.com",
+    "restaurantName": "The Spicy Spoon",
+    "city": "Delhi",
+    "country": "India",
+    "deliveryPrice": 250,
+    "estimatedDeliveryTime": 45,
     "cuisines": [
       "Indian",
       "American",
-      "Tacos",
+      "Mexican",
       "BBQ"
     ],
     "menuItems": [
       {
-        "name": "Item 1",
-        "price": 570,
+        "name": "Chicken Tikka Masala",
+        "price": 1099,
         "_id": {
-          "$oid": "879d1aa0cb2bb18d49c9fe89"
+          "$oid": "60ad1aa0cb2bb18d49c9fe89"
         }
       },
       {
-        "name": "Item 2",
-        "price": 2298,
+        "name": "BBQ Ribs",
+        "price": 1599,
         "_id": {
-          "$oid": "1fbfd7a6d60f277cd446b3ee"
+          "$oid": "61bfd7a6d60f277cd446b3ee"
         }
       },
       {
-        "name": "Item 3",
-        "price": 2224,
+        "name": "Tacos",
+        "price": 799,
         "_id": {
-          "$oid": "f2edf1ff6bcad0fcf0ba60b6"
+          "$oid": "62edf1ff6bcad0fcf0ba60b6"
         }
       },
       {
-        "name": "Item 4",
-        "price": 1469,
+        "name": "Cheeseburger",
+        "price": 899,
         "_id": {
-          "$oid": "49fb3fcbea0cdedbe252b2bf"
+          "$oid": "63fb3fcbea0cdedbe252b2bf"
         }
       },
       {
-        "name": "Item 5",
-        "price": 2130,
+        "name": "Pulled Pork Sandwich",
+        "price": 1199,
         "_id": {
-          "$oid": "cffecdfa4cad4b7ea5ecee24"
+          "$oid": "64fecdfa4cad4b7ea5ecee24"
         }
       }
     ],
-    "imageUrl": "https://placehold.co/1600x400",
-    "lastUpdated": "2024-02-01T18:03:56.681036"
+    "imageUrl": "https://example.com/images/restaurant.jpg",
+    "lastUpdated": "2024-07-01T18:03:56.681036"
   },
+  
   {
     "user": "User2",
     "restaurantName": "Restaurant 2",
