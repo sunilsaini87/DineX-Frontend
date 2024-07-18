@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link
           to="/"
-          className="text-3xl font-bold tracking-tight text-orange-500 flex items-center"
+          className="text-3xl font-bold tracking-tight text-red-500 flex items-center"
         >
           <img src="/Dinex.png" alt="DineX Logo" className="h-8 w-8 mr-2" />
           DineX

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col items-center text-center">
         <Link
           to="/"
-          className="text-3xl font-bold tracking-tight text-orange-500 flex items-center"
+          className="text-3xl font-bold tracking-tight text-red-500 flex items-center"
         >
           <img src="/Dinex.png" alt="DineX Logo" className="h-8 w-8 mr-2" />
           DineX
