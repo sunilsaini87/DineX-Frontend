@@ -3,7 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useMutation, useQuery } from "react-query";
 import { toast } from "sonner";
 
-// const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export const useGetMyRestaurant = () => {
   const { getAccessTokenSilently } = useAuth0();
@@ -11,7 +11,7 @@ export const useGetMyRestaurant = () => {
   const getMyRestaurantRequest = async (): Promise<Restaurant> => {
     const accessToken = await getAccessTokenSilently();
 
-    const response = await fetch(`https://dinex-backend.onrender.com/api/my/restaurant`, {
+    const response = await fetch(`${API_BASE_URL}/api/my/restaurant`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${accessToken}`,
@@ -40,7 +40,7 @@ export const useCreateMyRestaurant = () => {
   ): Promise<Restaurant> => {
     const accessToken = await getAccessTokenSilently();
 
-    const response = await fetch(`https://dinex-backend.onrender.com/api/my/restaurant`, {
+    const response = await fetch(`${API_BASE_URL}/api/my/restaurant`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${accessToken}`,
@@ -81,7 +81,7 @@ export const useUpdateMyRestaurant = () => {
   ): Promise<Restaurant> => {
     const accessToken = await getAccessTokenSilently();
 
-    const response = await fetch(`https://dinex-backend.onrender.com/api/my/restaurant`, {
+    const response = await fetch(`${API_BASE_URL}/api/my/restaurant`, {
       method: "PUT",
       headers: {
         Authorization: `Bearer ${accessToken}`,
@@ -120,7 +120,7 @@ export const useGetMyRestaurantOrders = () => {
   const getMyRestaurantOrdersRequest = async (): Promise<Order[]> => {
     const accessToken = await getAccessTokenSilently();
 
-    const response = await fetch(`https://dinex-backend.onrender.com/api/my/restaurant/order`, {
+    const response = await fetch(`${API_BASE_URL}/api/my/restaurant/order`, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
         "Content-Type": "application/json",
@@ -156,7 +156,7 @@ export const useUpdateMyRestaurantOrder = () => {
     const accessToken = await getAccessTokenSilently();
 
     const response = await fetch(
-      `https://dinex-backend.onrender.com/api/my/restaurant/order/${updateStatusOrderRequest.orderId}/status`,
+      `${API_BASE_URL}/api/my/restaurant/order/${updateStatusOrderRequest.orderId}/status`,
       {
         method: "PATCH",
         headers: {
